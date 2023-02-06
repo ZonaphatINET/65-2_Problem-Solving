@@ -12,7 +12,7 @@ def sequentialSearch(alist, item):
 
 testlist = [1, 2, 32, 8, 17, 19, 42, 13, 0]
 print(sequentialSearch(testlist, 3))
-print(sequentialSearch(testlist, 13))
+print(sequentialSearch(testlist, 42))
 
 #มีล้านตัว จะหาเลขตัวสุดท้ายจะ search ยังไงให้เร็วกว่า Sequentialsearch
 #
