@@ -5,7 +5,7 @@ def add_product(products, id, name, price):
 
 def delete_product(products, id):
     for i, product in enumerate(products):
-        if product['name'] == id:
+        if product['id'] == id:
             del products[i]
             print("Product deleted successfully!")
             return products
@@ -41,7 +41,7 @@ def display_menu():
 products = []
 
 choice = 0
-while choice != 6:
+while choice < 6:
     choice = display_menu()
     if choice == 1:
         id = int(input('Enter id: '))
@@ -52,7 +52,7 @@ while choice != 6:
         name = input("Enter product id: ")
         products = delete_product(products, id)
     elif choice == 3:
-        name = input("Enter product id to edit: ")
+        id = input("Enter product id to edit: ")
         new_id = input("Enter new product id: ")
         new_name = input("Enter new product name: ")
         new_price = float(input("Enter new product price: "))
