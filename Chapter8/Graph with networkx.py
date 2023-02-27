@@ -3,18 +3,12 @@ import matplotlib.pyplot as plt
 
 network = nx.Graph()
 
-network.add_nodes_from([1,2,3,4,5,6,7])
+network.add_nodes_from([1,2,3])
 print(f"This network has now {network.number_of_nodes()} nodes.")
 
 network.add_edge(1,2)
 network.add_edge(1,3)
-network.add_edge(1,4)
-network.add_edge(1,5)
-network.add_edge(4,2)
-network.add_edge(3,7)
-network.add_edge(3,5)
-network.add_edge(6,7)
-network.add_edge(6,5)
+
 
 
 color_list = ["gold", "red", "violet"]
