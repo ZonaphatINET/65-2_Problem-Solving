@@ -69,6 +69,7 @@ root.insert(35)
 root.insert(20)
 root.insert(47)
 root.insert(5)
+root.PrintTree()
 
 root.delete(20)#
 
